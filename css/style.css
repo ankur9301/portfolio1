@@ -175,7 +175,7 @@ section {
 
 
 .home-content p {
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin: 2rem 0 4rem;
 }
 
@@ -335,12 +335,12 @@ span {
     color: var(--main-color);
 }
 
-.about-img {
+/* .about-img {
     position: relative;
     width: 25rem;
     height: 25rem;
     border-radius: 50%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -366,7 +366,7 @@ span {
     border-bottom: .2rem solid var(--second-bg-color);
     border-left: .2rem solid var(--main-color);
     border-right: .2rem solid var(--main-color);
-}
+} */
 
 
 /* .about-img {
@@ -1026,7 +1026,78 @@ section a:hover {
     color: var(--main-color);
 }
 
+@media (max-width: 3000px) {
+    .home {
+        justify-content: center;
+        background: none;
+        /* Removes the large background image */
+        margin-top: 10rem;
+        /* Adjust the space as needed */
 
+    }
+
+    .home-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .about-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -150%);
+        /* Perfectly center the element */
+        width: 25rem;
+        height: 25rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .about-img img {
+        width: 90%;
+        border: 0.2rem solid var(--main-color);
+        border-radius: 50%;
+        transform: rotate(5deg)
+    }
+
+    /* .circle-spin {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% - 0.4rem);
+
+        height: calc(100% - 0.4rem);
+     
+        border-radius: 50%;
+        border-top: 0.2rem solid var(--second-bg-color);
+        border-bottom: 0.2rem solid var(--second-bg-color);
+        border-left: 0.2rem solid var(--main-color);
+        border-right: 0.2rem solid var(--main-color);
+        animation: spin 20s linear infinite;
+    }
+ */
+
+}
+
+
+/* 
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+} */
 
 /* BREAKPOINTS */
 
@@ -1034,6 +1105,11 @@ section a:hover {
     html {
         font-size: 55%
     }
+
+
+
+
+
 }
 
 @media (max-width: 991px) {
@@ -1058,10 +1134,13 @@ section a:hover {
 }
 
 @media (max-width: 768px) {
+
+
     .header {
         background: var(--bg-color);
 
     }
+
 
     #menu-icon {
         display: block;
@@ -1203,6 +1282,8 @@ section a:hover {
     }
 
 }
+
+
 
 
 /* KEYFRAMES ANIMATION */
