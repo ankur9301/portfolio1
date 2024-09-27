@@ -971,6 +971,46 @@ section a:hover {
     cursor: pointer;
 }
 
+/* Thank You Message Styles */
+.thank-you-message {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Make the container full height */
+    background-color: var(--bg-color);
+    /* Match with your theme */
+    color: var(--main-color);
+}
+
+.thank-you-message h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.thank-you-message p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.thank-you-message button {
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.thank-you-message button:hover {
+    background-color: #333;
+    /* Adjust hover effect */
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
