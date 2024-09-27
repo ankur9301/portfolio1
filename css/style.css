@@ -1102,12 +1102,24 @@ section a:hover {
 
 /* BREAKPOINTS */
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     html {
         font-size: 55%
     }
 
+    .home-content h1 {
+        font-size: 3rem;
+
+    }
+
+    .home-content p {
+        font-size: 1.8rem;
+        margin: 2rem 1.8rem;
+    }
+
 }
+
+
 
 @media (max-width: 991px) {
     header {
@@ -1128,6 +1140,9 @@ section a:hover {
         padding: 2rem 4%;
 
     }
+
+
+
 }
 
 @media (max-width: 768px) {
