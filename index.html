@@ -53,8 +53,9 @@
 
             <div class="btn-box">
                 <a href="documents/resume.pdf" class="btn" target="_blank" rel="noopener noreferrer">Resume</a>
-                <a href="#" class="btn">Lets Talk</a>
+                <a href="tel:+17712014622" class="btn">Let's Talk</a>
             </div>
+        </div>
         </div>
 
         <div class="home-sci">
@@ -462,44 +463,47 @@
 
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="#">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="f8090eef-4fe6-4061-9f96-88bcefd0e324">
 
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" name="name" placeholder="Full Name" required>
                     <span class="focus"></span>
                 </div>
 
                 <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
                     <span class="focus"></span>
                 </div>
             </div>
 
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" required>
+                    <input type="number" name="phone" placeholder="Mobile Number" required>
                     <span class="focus"></span>
                 </div>
 
                 <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
+                    <input type="text" name="subject" placeholder="Email Subject" required>
                     <span class="focus"></span>
                 </div>
             </div>
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
                 <span class="focus"></span>
-
             </div>
 
             <div class="btn-box btns">
                 <button type="submit" class="btn">Submit</button>
             </div>
         </form>
-
     </section>
+
+
 
     <!-- footer design -->
 

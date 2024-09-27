@@ -105,6 +105,42 @@ window.addEventListener('click', (e) => {
 });
 
 
+
+<script>
+    document.getElementById("contact-form").addEventListener("submit", async function (e) {
+        e.preventDefault(); // Prevent form submission
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    try {
+            // Send the form data to Web3Forms
+            const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+    body: formData
+            });
+
+    if (response.ok) {
+        // Create the thank-you message page
+        document.body.innerHTML = `
+                    <div style="text-align: center; padding: 20px;">
+                        <h2>Thank You!</h2>
+                        <p>Your message has been sent successfully.</p>
+                        <button onclick="window.location.reload()" style="padding: 10px 20px; background-color: var(--main-color); color: white; border: none; border-radius: 5px; cursor: pointer;">
+                            Go Back
+                        </button>
+                    </div>
+                `;
+            } else {
+        alert("There was an issue submitting your form. Please try again.");
+            }
+        } catch (error) {
+        alert("An error occurred. Please try again.");
+        }
+    });
+</script>
+
+
 // // Array of images
 // const images = [
 //     "images/hackathon.png",
